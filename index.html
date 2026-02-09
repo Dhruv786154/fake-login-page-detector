@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <h2>Fake Login Page Detector</h2>
+
+  <input type="text" id="urlInput" placeholder="Enter website URL">
+  <button onclick="checkURL()">Scan Website</button>
+
+  <p id="result"></p>
+
+  <div id="loginBox" style="display:none;">
+    <h3>Login Required</h3>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <button onclick="fakeLogin()">Login</button>
+    <p style="color:red;font-size:12px;">
+      Demo only. Never enter real credentials.
+    </p>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
